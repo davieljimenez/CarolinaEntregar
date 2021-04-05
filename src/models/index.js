@@ -87,15 +87,7 @@ db.citas.belongsToMany(db.servicios, { as: 'fk_servicio', through: 'servicios_ci
 /************************************************************************************************ */
 //Adrian
 
-db.facturaservicio = require("./facturaservicio.model.js")(
-    sequelize,
-    Sequelize
-);
-db.facturaserviciodet = require("./facturaserviciodet.model.js")(
-    sequelize,
-    Sequelize
-);
-db.perfiles = require("./perfiles.models.js")(sequelize, Sequelize);
+
 db.servicios = require("./servicios.models.js")(sequelize, Sequelize);
 
 /************************************************************************************************ */
@@ -166,6 +158,18 @@ db.facturaDetalleProducto = require("./facturaDetalleProducto.model")(
     sequelize,
     Sequelize
 );
+
+db.facturaservicio = require("./facturaservicio.model.js")(
+    sequelize,
+    Sequelize
+);
+db.facturaserviciodet = require("./facturaserviciodet.model.js")(
+    sequelize,
+    Sequelize
+);
+
+db.perfiles = require("./perfiles.models.js")(sequelize, Sequelize);
+
 db.facturaProducto = require("./facturaProducto.model")(sequelize, Sequelize);
 
 module.exports = db;
