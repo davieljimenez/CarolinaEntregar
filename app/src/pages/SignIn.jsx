@@ -25,7 +25,7 @@ const SignIn = ({ history }) => {
           sessionStorage.setItem(TOKEN_NAME, res.data.token);
           setAuthorizationToken(res.data.token);
         }
-        history.replace("/factura");
+        history.replace("/citas");
       }
     } catch (e) {
       console.log("error login in ", e);

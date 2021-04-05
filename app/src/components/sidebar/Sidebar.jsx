@@ -4,12 +4,13 @@ import { isAdmin, getUser } from "../../utils/auth";
 import { Link } from "react-router-dom";
 
 const links = [
-  { icon: "fas fa-file-alt", path: "/factura", title: "Factura Producto" },
-  { icon: "fas fa-file-alt", path: "/factserv", title: "Factura Servicio" },
+  
   { icon: "fas fa-calendar-week", path: "/citas", title: "Citas" },
 ];
 
 const linksAdmin = [
+  { icon: "fas fa-file-alt", path: "/factura", title: "Factura Producto" },
+  { icon: "fas fa-file-alt", path: "/factserv", title: "Factura Servicio" },
   { icon: "fas fa-boxes", path: "/producto", title: "Crear Producto" },
   { icon: "fas fa-boxes", path: "/productos", title: "Productos" },
   { icon: "fas fa-user-plus", path: "/serv", title: "Servicios" },
