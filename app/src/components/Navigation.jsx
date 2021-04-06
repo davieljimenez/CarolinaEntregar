@@ -24,7 +24,7 @@ const Navigation = ({ history }) => {
       >
         <div className="container">
           <Link className="navbar-brand" to="/">
-            AlbumsApp
+            Carolina SPA
           </Link>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ml-auto">
